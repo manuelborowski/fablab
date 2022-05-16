@@ -1,0 +1,9 @@
+{% extends "render_formio.html" %}
+
+{% block scripts %}
+    {{ super() }}
+    <script>
+        let visitors = {{ visitors | tojson }};
+    </script>
+    <script type="text/javascript"> {% include "badge/badge.js" %}</script>
+{% endblock %}

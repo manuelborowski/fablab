@@ -48,13 +48,14 @@ def extract_sub_component(form, key, item ={}, additional_fields = {}):
 # update the url in the print-document-iframe
 def prepare_for_edit(form, flat={}, unfold=False):
     def cb(component):
-        if component['key'] == 'email_confirm':
-            component['hidden'] = True
-            component['disabled'] = True
-        if component['key'] == 'visits':
-            component['hidden'] = False
-        if component['key'] == 'badge_code':
-            component['disabled'] = False
+        try:
+            if component['key'] == 'email_confirm':
+                component['hidden'] = True
+                component['disabled'] = True
+            if component['key'] == 'visits':
+                component['hidden'] = False
+        except Exception as e: #ignore when a component does not have a key...
+            pass
 
     iterate_components_cb(form, cb)
     iframe = search_component(form, 'container-iframe-document')
@@ -142,22 +143,6 @@ def iterate_components(form, cb):
             yield from iterate_components(component, cb)
         else:
             yield component
-
-def datetimestring_to_datetime(date_in, seconds=False):
-    try:
-        format_string = '%d/%m/%Y %H:%M:%S' if seconds else '%d/%m/%Y %H:%M'
-        date_out = datetime.datetime.strptime(date_in, format_string)
-        return date_out
-    except:
-        return None
-
-
-def datestring_to_date(date_in):
-    try:
-        date_out = datetime.datetime.strptime(date_in, '%d/%m/%Y')
-        return date_out.date()
-    except:
-        return None
 
 
 # formio returns:

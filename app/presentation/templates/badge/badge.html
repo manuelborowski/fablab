@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="content-section center">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+    <label style="margin-right:20px;" for="badge_input">Badge code :</label>
+    <input autofocus="true" id="badge-input" onkeypress="badged(event)">
+    <input id="badge-code" disabled>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    <script type="text/javascript"> {% include "badge/badge.js" %}</script>
+{% endblock %}

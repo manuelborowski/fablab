@@ -1,3 +1,5 @@
+import datetime
+
 from flask import Flask, render_template, abort
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, current_user
@@ -21,11 +23,12 @@ flask_app.config.from_object(app_config[config_name])
 flask_app.config.from_pyfile('config.py')
 
 # V0.1: start from sum-zorg V0.106.  Initial version
+# V0.2: added badge and visit
 
 
 @flask_app.context_processor
 def inject_defaults():
-    return dict(version='@ 2022 MB. V0.1', title=flask_app.config['HTML_TITLE'], site_name=flask_app.config['SITE_NAME'])
+    return dict(version='@ 2022 MB. V0.2', title=flask_app.config['HTML_TITLE'], site_name=flask_app.config['SITE_NAME'])
 
 
 #  enable logging
@@ -125,12 +128,14 @@ else:
             return func(*args, **kwargs)
         return decorated_view
 
-    from app.presentation.view import auth, user, settings,  api, warning, care, intake, visitor
+    from app.presentation.view import auth, user, settings,  api, warning, care, intake, visitor, badge, visit
     flask_app.register_blueprint(api.api)
     flask_app.register_blueprint(auth.auth)
     flask_app.register_blueprint(user.user)
     flask_app.register_blueprint(settings.settings)
     flask_app.register_blueprint(visitor.visitor)
+    flask_app.register_blueprint(visit.visit)
+    flask_app.register_blueprint(badge.badge)
     flask_app.register_blueprint(care.care)
     flask_app.register_blueprint(intake.intake)
     flask_app.register_blueprint(warning.warning)
@@ -152,3 +157,18 @@ else:
         abort(500)
 
 
+    def datetimestring_to_datetime(date_in, seconds=False):
+        try:
+            format_string = '%d/%m/%Y %H:%M:%S' if seconds else '%d/%m/%Y %H:%M'
+            date_out = datetime.datetime.strptime(date_in, format_string)
+            return date_out
+        except:
+            return None
+
+
+    def datestring_to_date(date_in):
+        try:
+            date_out = datetime.datetime.strptime(date_in, '%d/%m/%Y')
+            return date_out.date()
+        except:
+            return None

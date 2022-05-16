@@ -130,6 +130,12 @@ $(document).ready(function () {
                         type: f.type,
                         value: document.querySelector(`#${f.name} option:checked`).value
                     });
+                } else if (f.type === 'input') {
+                    filter_settings.push({
+                        name: f.name,
+                        type: f.type,
+                        value: document.querySelector(`#${f.name}`).value
+                    });
                 } else if (f.type === 'checkbox') {
                     let boxes = [];
                     f.boxes.forEach(([k, l]) => { boxes.push({id: k, checked: document.querySelector(`#${k}`).checked}) });
@@ -152,7 +158,7 @@ $(document).ready(function () {
             return false
         }
         filter_settings.forEach(f => {
-            if (f.type === 'select') {
+            if (f.type === 'select' || f.type === 'input') {
                 document.querySelector(`#${f.name}`).value = f.value;
             }
         })

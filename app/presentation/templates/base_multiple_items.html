@@ -38,7 +38,7 @@
                                 </select>
                             </div>
                         {%  endif %}
-                        {% if f.type == "datepicker" %}
+                        {% if f.type == "input" %}
                             <div class="form-group "><label class="control-label" for="{{f.name}}">{{f.label}}</label>
                                 <br><input id="{{f.name}}" name="{{f.name}}" class="table-filter">
                             </div>
@@ -50,7 +50,7 @@
                             {% endfor %}
                         {%  endif %}
                     {% endfor %}
-                <button class="btn btn-danger" type="button" onclick="clear_filter_setting()">Reset</button>
+                <button class="btn btn-danger" type="button" style="margin-left: 1rem;" onclick="clear_filter_setting()">Reset</button>
                 </div>
 
 

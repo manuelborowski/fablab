@@ -1,3 +1,4 @@
+import app
 from app import log
 from app.data import visitor as mvisitor
 import app.data.settings
@@ -6,7 +7,8 @@ import sys, datetime
 
 def add_visitor(data):
     try:
-        data['subscription_from'] = mformio.datestring_to_date(data['subscription_from'])
+        data['subscription_from'] = app.datestring_to_date(data['subscription_from'])
+        remove_badge_from_other_visitor(data)
         visitor = mvisitor.add_visitor(data)
         log.info(f"Add visitor: {visitor.last_name} {visitor.first_name}, {data}")
         return {"status": True, "data": {'id': visitor.id}}
@@ -21,15 +23,16 @@ def update_visitor(data):
         visitor = mvisitor.get_first_visitor({'id': data['id']})
         if visitor:
             del data['id']
-            data['subscription_from'] = mformio.datestring_to_date(data['subscription_from'])
+            data['subscription_from'] = app.datestring_to_date(data['subscription_from'])
+            remove_badge_from_other_visitor(data)
             visitor = mvisitor.update_visitor(visitor, data)
             if visitor:
                 add_list, delete_list = update_visits(visitor.visits, data['visits'])
                 if delete_list:
                     mvisitor.delete_visits(delete_list)
                 for visit in add_list:
-                    visit['time_in'] = mformio.datetimestring_to_datetime(visit['time_in'])
-                    visit['time_out'] = mformio.datetimestring_to_datetime(visit['time_out'])
+                    visit['time_in'] = app.datetimestring_to_datetime(visit['time_in'])
+                    visit['time_out'] = app.datetimestring_to_datetime(visit['time_out'])
                     visit['visitor'] = visitor
                     mvisitor.add_visit(visit)
                 log.info(f"Update visitor: {visitor.last_name} {visitor.first_name}, {data}")
@@ -69,7 +72,14 @@ def prepare_edit_form(id):
         raise e
 
 
-############ care overview list #########
+def get_visitors():
+    out = []
+    visitors =  mvisitor.get_visitors()
+    out = [v.to_dict() for v in visitors]
+    return out
+
+
+############ visitor overview list #########
 def format_data(db_list):
     out = []
     for visitor in db_list:
@@ -77,6 +87,19 @@ def format_data(db_list):
         em.update({
             'row_action': visitor.id,
             'DT_RowId': visitor.id
+        })
+        out.append(em)
+    return out
+
+
+############ visit overview list #########
+def visit_format_data(db_list):
+    out = []
+    for visit in db_list:
+        em = visit.to_dict()
+        em.update({
+            'row_action': visit.id,
+            'DT_RowId': visit.id
         })
         out.append(em)
     return out
@@ -115,6 +138,9 @@ def update_visits(current, new):
     return to_add, to_delete
 
 
-
+def remove_badge_from_other_visitor(data):
+    visitors = mvisitor.get_visitors({'badge_code': data['badge_code']})
+    for visitor in visitors:
+        mvisitor.update_visitor(visitor, {'badge_code': '', 'badge_number': ''})
 
 

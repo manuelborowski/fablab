@@ -100,12 +100,13 @@ def item_edit(ids=None):
                 return redirect(url_for('visitor.show'))
         else:
             id = ids[0]
-        return render_template('render_formio.html', data={"form": "edit",
-                                                           "get_form_endpoint": "visitor.get_form",
-                                                           "extra": id,
-                                                           "buttons": ["save", "cancel"],
-                                                           'css': {'width': '50%', 'margin-left': 'auto', 'margin-right': 'auto'}
-                                                           })
+            data = {"form": "edit",
+                "get_form_endpoint": "visitor.get_form",
+                "extra": id,
+                "buttons": ["save", "cancel"],
+                'css': {'width': '50%', 'margin-left': 'auto', 'margin-right': 'auto'},
+            }
+        return render_template('badge/badge-visitor.html', data=data, visitors=app.application.visitor.get_visitors())
     except Exception as e:
         log.error(f'Could not edit guest {e}')
         flash_plus('Kan gebruiker niet aanpassen', e)
@@ -115,43 +116,17 @@ def item_edit(ids=None):
 @supervisor_required
 def item_add():
     try:
-        return render_template('render_formio.html', data={"form": "add",
-                                                           "get_form_endpoint": "visitor.get_form",
-                                                           "buttons": ["save", "cancel", "clear"],
-                                                           'css': {'width': '50%', 'margin-left': 'auto', 'margin-right': 'auto'}
-                                                           })
+        data = {"form": "add",
+                "get_form_endpoint": "visitor.get_form",
+                "buttons": ["save", "cancel", "clear"],
+                'css': {'width': '50%', 'margin-left': 'auto', 'margin-right': 'auto'},
+                'visitors': app.application.visitor.get_visitors()
+                }
+        return render_template('badge/badge-visitor.html', data=data, visitors=app.application.visitor.get_visitors())
     except Exception as e:
         log.error(f'Could not add visitor {e}')
         flash_plus(f'Kan visitor niet toevoegen: {e}')
     return redirect(url_for('visitor.show'))
-
-
-# # propagate changes in (some) properties to the table
-# def registration_update_cb(value, opaque):
-#     msocketio.broadcast_message({'type': 'celledit-visitor', 'data': {'reload-table': True}})
-#
-# mregistration.registration_subscribe_changed(registration_update_cb, None)
-
-# some columns can be edit inplace in the table.
-def celledit_event_cb(msg, client_sid=None):
-    try:
-        nbr = msg['data']['column']
-        column_template = table_configuration['template'][nbr]
-        if 'celltoggle' in column_template or 'celledit' in column_template:
-            mregistration.registration_update(msg['data']['id'], {column_template['data']: msg['data']['value']})
-    except Exception as e:
-        log.error(f'{sys._getframe().f_code.co_name}: {e}')
-    msocketio.send_to_room({'type': 'celledit-visitor', 'data': {'status': True}}, client_sid)
-
-msocketio.subscribe_on_type('celledit-visitor', celledit_event_cb)
-
-
-def get_misc_fields(extra_fields, form):
-    misc_field = {}
-    for field in extra_fields:
-        if field in form:
-            misc_field[field] = form[field]
-    return misc_field
 
 
 def get_filters():
@@ -170,7 +145,7 @@ def get_pdf_template():
 table_configuration = {
     'view': 'visitor',
     'title': 'Bezoekers',
-    'buttons': ['edit', 'add', 'delete', 'pdf'],
+    'buttons': ['edit', 'add', 'delete'],
     'delete_message': 'Opgelet!!<br>'
                       'Bent u zeker om deze bezoeker(s) te verwijderen?<br>'
                       'Eens verwijderd kunnen ze niet meer worden terug gehaald.<br>',
@@ -190,5 +165,5 @@ table_configuration = {
     'socketio_endpoint': 'celledit-visitor',
     # 'cell_color': {'supress_cell_content': True, 'color_keys': {'X': 'red', 'O': 'green'}}, #TEST
     # 'suppress_dom': True,
-
 }
+

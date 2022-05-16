@@ -1,3 +1,4 @@
+import app
 from app import log
 from app.data import student_intake as mstudent
 import app.data.settings
@@ -6,8 +7,8 @@ import sys, datetime
 
 def add_student(data):
     try:
-        data['s_date_of_birth'] = mformio.datestring_to_date(data['s_date_of_birth'])
-        data['i_intake_date'] = mformio.datetimestring_to_datetime(data['i_intake_date'])
+        data['s_date_of_birth'] = app.datestring_to_date(data['s_date_of_birth'])
+        data['i_intake_date'] = app.datetimestring_to_datetime(data['i_intake_date'])
         student = mstudent.add_student(data)
         log.info(f"Add intake: {student.s_last_name} {student.s_first_name}, {data}")
         return {"status": True, "data": {'id': student.id}}
@@ -22,8 +23,8 @@ def update_student(data):
         student = mstudent.get_first_student({'id': data['id']})
         if student:
             del data['id']
-            data['s_date_of_birth'] = mformio.datestring_to_date(data['s_date_of_birth'])
-            data['i_intake_date'] = mformio.datetimestring_to_datetime(data['i_intake_date'])
+            data['s_date_of_birth'] = app.datestring_to_date(data['s_date_of_birth'])
+            data['i_intake_date'] = app.datetimestring_to_datetime(data['i_intake_date'])
             student = mstudent.update_student(student, data)
             if student:
                 log.info(f"Update intake: {student.s_last_name} {student.s_first_name}, {data}")

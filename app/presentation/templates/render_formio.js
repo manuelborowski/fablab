@@ -6,6 +6,7 @@ let cancel_endpoint = 'cancel_endpoint' in data ? data.cancel_endpoint : "";
 let formio_local_storage = {}
 let backup_timer_id;
 let form_data;
+let formio_events = []
 
 function button_pushed(action) {
     switch (action) {
@@ -57,7 +58,6 @@ $(document).ready( async function () {
                         for (; diff > 0; diff--) component.addRow();
                     }
                     component.setValue(v);
-                    // formio.getComponent(k).setValue(v);
                 } catch (error) {
                     console.log("skipped ", k, v);
                 }
@@ -120,8 +120,21 @@ $(document).ready( async function () {
         formio.on('clear', () => {
             button_pushed('clear');
         });
+        do_event_cb('loaded');
     } else {
         alert(`Fout bij het ophalen van een form:\n ${form_data.data}`)
-        document.location.reload();
+        document.location.href = Flask.url_for(form_data.data['submit_endpoint'])
     }
 });
+
+const subscribe_formio_event = (type, cb) => {
+    formio_events.push([type, cb]);
+}
+
+const do_event_cb = type => {
+    formio_events.forEach(e => {
+        if(e[0] === type) {
+            e[1](type);
+        }
+    })
+}

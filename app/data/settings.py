@@ -89,7 +89,8 @@ default_configuration_settings = {
 
     'visitor-formio-template': ('', Settings.SETTING_TYPE.E_STRING),
     'visitor-datatables-template': ('{}', Settings.SETTING_TYPE.E_STRING),
-    'visitor-pdf-template': ('', Settings.SETTING_TYPE.E_STRING),
+
+    'visit-datatables-template': ('{}', Settings.SETTING_TYPE.E_STRING),
 }
 
 

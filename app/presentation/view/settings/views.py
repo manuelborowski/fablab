@@ -279,12 +279,44 @@ settings_formio = \
                 "key": "visitor-datatables-template",
                 "type": "textarea",
                 "input": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Visits",
+        "tableView": false,
+        "key": "visit",
+        "type": "container",
+        "input": true,
+        "components": [
+          {
+            "title": "Bezoeken",
+            "theme": "primary",
+            "collapsible": true,
+            "key": "RegistratieTemplate1",
+            "type": "panel",
+            "label": "BEZOEKERS : Registratie template en e-mail",
+            "collapsed": true,
+            "input": false,
+            "tableView": false,
+            "components": [
+              {
+                "label": "Opslaan",
+                "showValidations": false,
+                "theme": "warning",
+                "tableView": false,
+                "key": "submit",
+                "type": "button",
+                "input": true,
+                "saveOnEnter": false
               },
               {
-                "label": "Pdf template (JS)",
+                "label": "Lijst template (JSON)",
                 "autoExpand": false,
                 "tableView": true,
-                "key": "visitor-pdf-template",
+                "key": "visit-datatables-template",
                 "type": "textarea",
                 "input": true
               }

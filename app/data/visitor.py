@@ -1,4 +1,6 @@
 import sys
+
+import app
 from app import log, db
 from sqlalchemy import text
 from sqlalchemy_serializer import SerializerMixin
@@ -79,12 +81,17 @@ def delete_visitors(ids=None):
     return None
 
 
-def get_visitors(data={}, special={}, order_by=None, first=False, count=False):
+# in data, when a key is prefixed with a '!', then the is not equal-to filter is used
+def get_visitors(data={}, order_by=None, first=False, count=False):
     try:
         q = Visitor.query
         for k, v in data.items():
+            not_equal = False
+            if k[0] == '!':
+                not_equal = True
+                k = k[1::]
             if hasattr(Visitor, k):
-                q = q.filter(getattr(Visitor, k) == v)
+                q = q.filter(getattr(Visitor, k) != v)  if not_equal else q.filter(getattr(Visitor, k) == v)
         if order_by:
             q = q.order_by(getattr(Visitor, order_by))
         if first:
@@ -189,7 +196,32 @@ def filter_data(query, filter):
 
 def search_data(search_string):
     search_constraints = []
-    search_constraints.append(Visitor.s_first_name.like(search_string))
-    search_constraints.append(Visitor.s_last_name.like(search_string))
+    search_constraints.append(Visitor.first_name.like(search_string))
+    search_constraints.append(Visitor.last_name.like(search_string))
+    search_constraints.append(Visitor.subscription_type.like(search_string))
+    return search_constraints
+
+
+############ visits overview list #########
+def visit_pre_filter():
+    return db.session.query(Visit).join(Visitor)
+
+
+def visit_filter_data(query, filter):
+    if filter and 'name' in filter[0] and filter[0]['name'] == 'filter_date' and filter[0]['value'] != '':
+        try:
+            start_date = app.datetimestring_to_datetime(f"{filter[0]['value']} 00:00")
+            end_date = app.datetimestring_to_datetime(f"{filter[0]['value']} 23:59")
+            query = query.filter(Visit.time_in > start_date).filter(Visit.time_in < end_date)
+            query = query.filter(Visit.time_out > start_date).filter(Visit.time_out < end_date)
+        except:
+            pass    #probably wrong format
+    return query
+
+
+def visit_search_data(search_string):
+    search_constraints = []
+    search_constraints.append(Visitor.first_name.like(search_string))
+    search_constraints.append(Visitor.last_name.like(search_string))
     return search_constraints
 
