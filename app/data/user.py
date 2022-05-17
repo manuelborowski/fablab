@@ -122,6 +122,8 @@ def update_user(user, data={}):
             if hasattr(user, k):
                 if getattr(User, k).expression.type.python_type == type(v):
                     setattr(user, k, v.strip() if isinstance(v, str) else v)
+        if 'password' in data:
+            user.password = data['password']
         db.session.commit()
         return user
     except Exception as e:
