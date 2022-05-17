@@ -52,10 +52,7 @@
                     <a class="nav-link" href="{{ url_for('badge.show') }}">Badge</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('care.show') }}">Zorg</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('intake.show') }}">Inschrijven</a>
+                    <a class="nav-link" href="{{ url_for('badge.badge_start') }}">Start</a>
                 </li>
                 {% if  current_user.is_at_least_admin %}
                     <li class="nav-item">

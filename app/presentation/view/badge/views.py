@@ -1,13 +1,7 @@
 from . import badge
-from app import log, supervisor_required, flask_app
-from flask import redirect, url_for, request, render_template
-from flask_login import login_required, current_user
-from app.presentation.view import base_multiple_items
-from app.presentation.layout.utils import flash_plus
-from app.application import socketio as msocketio, settings as msettings
-import sys, json
-import app.data.visitor
-import app.application.visitor
+from app import flask_app
+from flask import render_template
+from flask_login import login_required, logout_user
 
 
 @badge.route('/badge/', methods=['POST', 'GET'])
@@ -18,4 +12,5 @@ def show():
 ################# a visit ###############
 @badge.route('/badge/start', methods=['POST', 'GET'])
 def badge_start():
+    logout_user()
     return render_template('badge/visit.html', api_key=flask_app.config['API_KEY'])

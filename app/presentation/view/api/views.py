@@ -1,7 +1,6 @@
 from flask import request
 from . import api
-from app.application import  student_care as mstudent_care, student_intake as mstudent_intake, user as muser, visitor as mvisitor
-from app.data import settings as msettings
+from app.application import  user as muser, visitor as mvisitor
 from app import flask_app
 import json
 from functools import wraps
@@ -44,38 +43,6 @@ def visitor_update():
 def visit_add():
     data = json.loads(request.data)
     ret = mvisitor.add_visit(data)
-    return(json.dumps(ret))
-
-
-@api.route('/api/care/add', methods=['POST'])
-@key_required
-def care_add():
-    data = json.loads(request.data)
-    ret = mstudent_care.add_student(data)
-    return(json.dumps(ret))
-
-
-@api.route('/api/care/update', methods=['POST'])
-@key_required
-def care_update():
-    data = json.loads(request.data)
-    ret = mstudent_care.update_student(data)
-    return(json.dumps(ret))
-
-
-@api.route('/api/intake/add', methods=['POST'])
-@key_required
-def intake_add():
-    data = json.loads(request.data)
-    ret = mstudent_intake.add_student(data)
-    return(json.dumps(ret))
-
-
-@api.route('/api/intake/update', methods=['POST'])
-@key_required
-def intake_update():
-    data = json.loads(request.data)
-    ret = mstudent_intake.update_student(data)
     return(json.dumps(ret))
 
 

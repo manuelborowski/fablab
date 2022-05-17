@@ -27,10 +27,11 @@ flask_app.config.from_pyfile('config.py')
 # V0.3: added visitor-badge-page.  Added support to use badge in a form-field and/or input-field
 # V0.4: password update was not stored
 # V0.5: fixed login via smartschool
+# V0.6: removed studen care and intake
 
 @flask_app.context_processor
 def inject_defaults():
-    return dict(version='@ 2022 MB. V0.5', title=flask_app.config['HTML_TITLE'], site_name=flask_app.config['SITE_NAME'])
+    return dict(version='@ 2022 MB. V0.6', title=flask_app.config['HTML_TITLE'], site_name=flask_app.config['SITE_NAME'])
 
 
 #  enable logging
@@ -130,7 +131,7 @@ else:
             return func(*args, **kwargs)
         return decorated_view
 
-    from app.presentation.view import auth, user, settings,  api, warning, care, intake, visitor, badge, visit
+    from app.presentation.view import auth, user, settings,  api, warning, visitor, badge, visit
     flask_app.register_blueprint(api.api)
     flask_app.register_blueprint(auth.auth)
     flask_app.register_blueprint(user.user)
@@ -138,8 +139,6 @@ else:
     flask_app.register_blueprint(visitor.visitor)
     flask_app.register_blueprint(visit.visit)
     flask_app.register_blueprint(badge.badge)
-    flask_app.register_blueprint(care.care)
-    flask_app.register_blueprint(intake.intake)
     flask_app.register_blueprint(warning.warning)
 
     @flask_app.errorhandler(403)
