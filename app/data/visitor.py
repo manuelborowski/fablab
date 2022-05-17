@@ -2,7 +2,8 @@ import sys
 
 import app
 from app import log, db
-from sqlalchemy import text
+from app.data import utils as mutils
+from sqlalchemy import text, desc
 from sqlalchemy_serializer import SerializerMixin
 
 
@@ -16,6 +17,9 @@ class Visit(db.Model, SerializerMixin):
     time_in = db.Column(db.DateTime())
     time_out = db.Column(db.DateTime())
     visitor_id = db.Column(db.Integer, db.ForeignKey('visitors.id'),  nullable=False)
+
+    def commit(self):
+        db.session.commit()
 
 
 class Visitor(db.Model, SerializerMixin):
@@ -36,7 +40,22 @@ class Visitor(db.Model, SerializerMixin):
     phone = db.Column(db.String(256), default='')
     badge_code = db.Column(db.String(256), default='')
     badge_number = db.Column(db.String(256), default='')
-    visits = db.relationship('Visit', cascade='all, delete-orphan', backref='visitor', lazy=True, order_by=(Visit.time_in))
+    visits = db.relationship('Visit', cascade='all, delete-orphan', backref='visitor', lazy=True, order_by=(desc(Visit.time_in)))
+
+    def commit(self):
+        db.session.commit()
+
+    @property
+    def is_subscriber(self):
+        return self.subscription_type == "jaarabonnement"
+
+    @property
+    def is_active(self):
+        return self.subscription_type != 'niet-actief'
+
+    def deactivate(self):
+        self.subscription_type = "niet-actief"
+        db.session.commit()
 
 
 def add_visitor(data = {}):
@@ -141,7 +160,10 @@ def get_visits(data={}, special={}, order_by=None, first=False, count=False):
             if hasattr(Visit, k):
                 q = q.filter(getattr(Visit, k) == v)
         if order_by:
-            q = q.order_by(getattr(Visit, order_by))
+            if order_by[0] == "!":
+                q = q.order_by(desc(getattr(Visit, order_by[1::])))
+            else:
+                q = q.order_by(getattr(Visit, order_by))
         if first:
             visit = q.first()
             return visit
@@ -185,12 +207,11 @@ def pre_filter():
 
 
 def filter_data(query, filter):
-    if filter and 'type' in filter[0] and filter[0]['type'] == 'checkbox':
-        for cb in filter[0]['value']:
-            query = query.filter(text(cb['id']), cb['checked'])
     for f in filter:
-        if f['type'] == 'select' and f['value'] != 'none':
-            query = query.filter(getattr(Visitor, f['name']) == (f['value'] == 'True'))
+        if f['name']  == 'filter_badge_code' and f['value'] != '':
+            _, is_valid, code = mutils.check_and_process_badge_code(f['value'])
+            if is_valid:
+                query = query.filter(Visitor.badge_code == code)
     return query
 
 

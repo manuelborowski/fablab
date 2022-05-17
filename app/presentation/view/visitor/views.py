@@ -106,7 +106,7 @@ def item_edit(ids=None):
                 "buttons": ["save", "cancel"],
                 'css': {'width': '50%', 'margin-left': 'auto', 'margin-right': 'auto'},
             }
-        return render_template('badge/badge-visitor.html', data=data, visitors=app.application.visitor.get_visitors())
+        return render_template('badge/visitor-badge-formio.html', data=data, visitors=app.application.visitor.get_visitors())
     except Exception as e:
         log.error(f'Could not edit guest {e}')
         flash_plus('Kan gebruiker niet aanpassen', e)
@@ -122,7 +122,7 @@ def item_add():
                 'css': {'width': '50%', 'margin-left': 'auto', 'margin-right': 'auto'},
                 'visitors': app.application.visitor.get_visitors()
                 }
-        return render_template('badge/badge-visitor.html', data=data, visitors=app.application.visitor.get_visitors())
+        return render_template('badge/visitor-badge-formio.html', data=data, visitors=app.application.visitor.get_visitors())
     except Exception as e:
         log.error(f'Could not add visitor {e}')
         flash_plus(f'Kan visitor niet toevoegen: {e}')
@@ -130,16 +130,14 @@ def item_add():
 
 
 def get_filters():
-    filters = []
+    filters = [
+        {
+            'type': 'input',
+            'name': 'filter_badge_code',
+            'label': 'Badge',
+        }
+    ]
     return filters
-
-
-def get_show_gauges():
-    return ''
-
-
-def get_pdf_template():
-    return msettings.get_pdf_template('visitor-pdf-template')
 
 
 table_configuration = {
@@ -150,8 +148,6 @@ table_configuration = {
                       'Bent u zeker om deze bezoeker(s) te verwijderen?<br>'
                       'Eens verwijderd kunnen ze niet meer worden terug gehaald.<br>',
     'get_filters': get_filters,
-    'get_show_info': get_show_gauges,
-    'get_pdf_template': get_pdf_template,
     'item': {
         'edit': {'title': 'Wijzig een visitor', 'buttons': ['save', 'cancel']},
         'add': {'title': 'Voeg een visitor toe', 'buttons': ['save', 'cancel']},

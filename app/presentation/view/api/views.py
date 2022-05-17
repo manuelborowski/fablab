@@ -39,6 +39,14 @@ def visitor_update():
     return(json.dumps(ret))
 
 
+@api.route('/api/visit/add', methods=['POST'])
+@key_required
+def visit_add():
+    data = json.loads(request.data)
+    ret = mvisitor.add_visit(data)
+    return(json.dumps(ret))
+
+
 @api.route('/api/care/add', methods=['POST'])
 @key_required
 def care_add():

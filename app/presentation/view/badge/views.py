@@ -14,3 +14,8 @@ import app.application.visitor
 @login_required
 def show():
     return render_template('badge/badge.html')
+
+################# a visit ###############
+@badge.route('/badge/start', methods=['POST', 'GET'])
+def badge_start():
+    return render_template('badge/visit.html', api_key=flask_app.config['API_KEY'])

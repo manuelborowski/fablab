@@ -24,11 +24,12 @@ flask_app.config.from_pyfile('config.py')
 
 # V0.1: start from sum-zorg V0.106.  Initial version
 # V0.2: added badge and visit
+# V0.3: added visitor-badge-page.  Added support to use badge in a form-field and/or input-field
 
 
 @flask_app.context_processor
 def inject_defaults():
-    return dict(version='@ 2022 MB. V0.2', title=flask_app.config['HTML_TITLE'], site_name=flask_app.config['SITE_NAME'])
+    return dict(version='@ 2022 MB. V0.3', title=flask_app.config['HTML_TITLE'], site_name=flask_app.config['SITE_NAME'])
 
 
 #  enable logging

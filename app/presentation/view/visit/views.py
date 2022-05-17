@@ -47,13 +47,8 @@ def get_filters():
     return filters
 
 
-
 def get_show_gauges():
     return ''
-
-
-def get_pdf_template():
-    return msettings.get_pdf_template('visit-pdf-template')
 
 
 table_configuration = {
@@ -63,7 +58,6 @@ table_configuration = {
     'delete_message': '',
     'get_filters': get_filters,
     'get_show_info': get_show_gauges,
-    'get_pdf_template': get_pdf_template,
     'item': {},
     'href': [],
     'pre_filter': app.data.visitor.visit_pre_filter,
@@ -72,4 +66,5 @@ table_configuration = {
     'search_data': app.data.visitor.visit_search_data,
     'default_order': (1, 'asc'),
 }
+
 
