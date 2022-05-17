@@ -28,10 +28,11 @@ flask_app.config.from_pyfile('config.py')
 # V0.4: password update was not stored
 # V0.5: fixed login via smartschool
 # V0.6: removed studen care and intake
+# V0.7: disable browser cache
 
 @flask_app.context_processor
 def inject_defaults():
-    return dict(version='@ 2022 MB. V0.6', title=flask_app.config['HTML_TITLE'], site_name=flask_app.config['SITE_NAME'])
+    return dict(version='@ 2022 MB. V0.7', title=flask_app.config['HTML_TITLE'], site_name=flask_app.config['SITE_NAME'])
 
 
 #  enable logging
@@ -81,6 +82,18 @@ db.init_app(flask_app)
 socketio = SocketIO(flask_app, async_mode=flask_app.config['SOCKETIO_ASYNC_MODE'], ping_timeout=10, ping_interval=5,
                     cors_allowed_origins=flask_app.config['SOCKETIO_CORS_ALLOWED_ORIGIN'])
 
+# disable browser cache
+@flask_app.after_request
+def add_header(r):
+    """
+    Add headers to both force latest IE rendering engine or Chrome Frame,
+    and also to cache the rendered page for 10 minutes.
+    """
+    r.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
+    r.headers["Pragma"] = "no-cache"
+    r.headers["Expires"] = "0"
+    r.headers['Cache-Control'] = 'public, max-age=0'
+    return r
 
 def create_admin():
     from app.data.user import User
