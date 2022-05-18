@@ -29,10 +29,11 @@ flask_app.config.from_pyfile('config.py')
 # V0.5: fixed login via smartschool
 # V0.6: removed studen care and intake
 # V0.7: disable browser cache
+# V0.8: added 'start fablab' link to home screen.  Removed view badge
 
 @flask_app.context_processor
 def inject_defaults():
-    return dict(version='@ 2022 MB. V0.7', title=flask_app.config['HTML_TITLE'], site_name=flask_app.config['SITE_NAME'])
+    return dict(version='@ 2022 MB. V0.8', title=flask_app.config['HTML_TITLE'], site_name=flask_app.config['SITE_NAME'])
 
 
 #  enable logging
@@ -144,14 +145,13 @@ else:
             return func(*args, **kwargs)
         return decorated_view
 
-    from app.presentation.view import auth, user, settings,  api, warning, visitor, badge, visit
+    from app.presentation.view import auth, user, settings,  api, warning, visitor, visit
     flask_app.register_blueprint(api.api)
     flask_app.register_blueprint(auth.auth)
     flask_app.register_blueprint(user.user)
     flask_app.register_blueprint(settings.settings)
     flask_app.register_blueprint(visitor.visitor)
     flask_app.register_blueprint(visit.visit)
-    flask_app.register_blueprint(badge.badge)
     flask_app.register_blueprint(warning.warning)
 
     @flask_app.errorhandler(403)

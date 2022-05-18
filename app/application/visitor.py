@@ -80,16 +80,11 @@ def add_visit(data):
                     if direction == 'in':
                         log.info(f'{code}: registration IN')
                         visit = mvisitor.add_visit({"visitor": visitor, "time_in": now})
-                        # registration = Registration(visitor=visitor, time_in=now)
-                        # db.session.add(registration)
                     else:
                         log.info(f'{code}: registration OUT')
                         visit = mvisitor.get_visits({"visitor": visitor}, order_by="!time_in", first=True)
                         visit.time_out = now
                         visit.commit()
-                        # registration = Registration.find_last_registration_of_visitor(visitor)
-                        # registration.time_out = now
-                    # db.session.commit()
                     ok_message = f'Hallo {visitor.first_name}, u hebt juist ' \
                                  f'{"IN" if direction == "in" else "UIT"} gebadged om {now.strftime("%H:%M")}.<br>{ok_message}'
             else:

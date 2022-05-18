@@ -1,12 +1,9 @@
 from . import visit
-from app import log, supervisor_required, flask_app
-from flask import redirect, url_for, request, render_template
-from flask_login import login_required, current_user
+from app import flask_app
+from flask import redirect, url_for, render_template
+from flask_login import login_required
 from app.presentation.view import base_multiple_items
-from app.presentation.layout.utils import flash_plus
-from app.application import socketio as msocketio, settings as msettings
-import sys, json
-import app.data.visitor
+from app.application import socketio as msocketio
 import app.application.visitor
 
 
@@ -68,3 +65,6 @@ table_configuration = {
 }
 
 
+@visit.route('/visit/start', methods=['POST', 'GET'])
+def start_fablab():
+    return render_template('visit/visit.html', api_key=flask_app.config['API_KEY'])

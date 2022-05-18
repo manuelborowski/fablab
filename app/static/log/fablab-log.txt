@@ -1,0 +1,363 @@
+2022-05-13 11:02:12,056 - FABLAB - INFO - NONE - start Fablab
+2022-05-13 11:02:17,430 - FABLAB - INFO - admin - User logged out
+2022-05-13 11:04:49,747 - FABLAB - INFO - NONE - start Fablab
+2022-05-13 11:05:03,660 - FABLAB - INFO - admin - user admin logged in
+2022-05-13 11:33:43,631 - FABLAB - INFO - NONE - start Fablab
+2022-05-13 11:34:33,517 - FABLAB - INFO - NONE - start Fablab
+2022-05-13 11:35:28,288 - FABLAB - INFO - NONE - start Fablab
+2022-05-13 11:36:04,962 - FABLAB - INFO - NONE - start Fablab
+2022-05-13 11:36:55,812 - FABLAB - INFO - NONE - start Fablab
+2022-05-13 11:42:01,300 - FABLAB - INFO - NONE - start Fablab
+2022-05-13 11:42:20,123 - FABLAB - INFO - NONE - start Fablab
+2022-05-13 11:42:40,826 - FABLAB - INFO - NONE - start Fablab
+2022-05-13 11:44:55,698 - FABLAB - INFO - NONE - start Fablab
+2022-05-13 11:48:09,909 - FABLAB - INFO - NONE - start Fablab
+2022-05-13 11:49:00,288 - FABLAB - INFO - NONE - start Fablab
+2022-05-13 14:59:59,615 - FABLAB - INFO - NONE - start Fablab
+2022-05-13 15:01:40,814 - FABLAB - INFO - NONE - start Fablab
+2022-05-13 15:02:20,978 - FABLAB - INFO - NONE - start Fablab
+2022-05-13 15:03:08,088 - FABLAB - INFO - NONE - start Fablab
+2022-05-14 08:56:21,928 - FABLAB - INFO - NONE - start Fablab
+2022-05-14 08:57:29,526 - FABLAB - INFO - NONE - start Fablab
+2022-05-14 09:01:01,363 - FABLAB - INFO - NONE - start Fablab
+2022-05-14 09:02:33,084 - FABLAB - INFO - NONE - start Fablab
+2022-05-14 09:04:01,476 - FABLAB - INFO - NONE - start Fablab
+2022-05-14 09:06:30,598 - FABLAB - INFO - NONE - start Fablab
+2022-05-14 09:08:35,056 - FABLAB - INFO - NONE - start Fablab
+2022-05-14 09:09:17,111 - FABLAB - INFO - NONE - start Fablab
+2022-05-14 09:15:29,060 - FABLAB - INFO - NONE - start Fablab
+2022-05-14 09:17:44,232 - FABLAB - INFO - NONE - start Fablab
+2022-05-14 14:31:49,574 - FABLAB - INFO - NONE - start Fablab
+2022-05-14 14:32:11,750 - FABLAB - INFO - NONE - start Fablab
+2022-05-14 14:47:12,954 - FABLAB - INFO - NONE - start Fablab
+2022-05-14 14:47:17,735 - FABLAB - ERROR - admin - Could not add visitor bade/badge-visitor.html
+2022-05-14 14:47:45,795 - FABLAB - INFO - NONE - start Fablab
+2022-05-14 14:51:01,723 - FABLAB - INFO - NONE - start Fablab
+2022-05-14 14:52:14,513 - FABLAB - INFO - NONE - start Fablab
+2022-05-14 14:52:48,637 - FABLAB - INFO - NONE - start Fablab
+2022-05-14 14:55:14,948 - FABLAB - INFO - NONE - start Fablab
+2022-05-14 14:58:50,559 - FABLAB - INFO - NONE - start Fablab
+2022-05-14 14:59:33,140 - FABLAB - INFO - NONE - start Fablab
+2022-05-14 15:02:58,341 - FABLAB - INFO - NONE - start Fablab
+2022-05-14 15:04:31,380 - FABLAB - INFO - NONE - start Fablab
+2022-05-14 15:04:38,424 - FABLAB - INFO - admin - Add visitor: qdsfqdf qsdfqsdf, {'last_name': 'qdsfqdf', 'first_name': 'qsdfqsdf', 'subscription_type': '', 'email': '', 'email_confirm': '', 'phone': '', 'badge_number': '', 'badge_input': '', 'badge_code': '', 'visits': [], 'id': '', 'subscription_from': datetime.date(2022, 5, 14)}
+2022-05-15 11:34:44,492 - FABLAB - INFO - NONE - start Fablab
+2022-05-15 11:34:57,328 - FABLAB - INFO - admin - user admin logged in
+2022-05-15 11:42:58,764 - FABLAB - INFO - NONE - start Fablab
+2022-05-15 11:51:25,700 - FABLAB - INFO - NONE - start Fablab
+2022-05-15 11:55:47,123 - FABLAB - INFO - NONE - start Fablab
+2022-05-15 11:57:34,391 - FABLAB - INFO - NONE - start Fablab
+2022-05-15 11:58:15,104 - FABLAB - INFO - admin - Add visitor: testa testb, {'last_name': 'testa', 'first_name': 'testb', 'subscription_type': '', 'subscription_from': None, 'paygo_max': '', 'paygo_left': '', 'email': '', 'email_confirm': '', 'phone': '', 'badge_number': '', 'badge_input': '"!\'!§àçè&(', 'badge_code': '', 'visits': [], 'id': ''}
+2022-05-15 16:47:09,553 - FABLAB - ERROR - admin - prepare_edit_form: 'key'
+2022-05-15 16:47:09,554 - FABLAB - ERROR - admin - Error in get_form: 'key'
+2022-05-15 16:47:17,631 - FABLAB - ERROR - admin - prepare_edit_form: 'key'
+2022-05-15 16:47:17,632 - FABLAB - ERROR - admin - Error in get_form: 'key'
+2022-05-15 16:47:19,892 - FABLAB - ERROR - admin - prepare_edit_form: 'key'
+2022-05-15 16:47:19,892 - FABLAB - ERROR - admin - Error in get_form: 'key'
+2022-05-15 16:47:23,649 - FABLAB - ERROR - admin - prepare_edit_form: 'key'
+2022-05-15 16:47:23,649 - FABLAB - ERROR - admin - Error in get_form: 'key'
+2022-05-15 16:47:52,943 - FABLAB - ERROR - admin - prepare_edit_form: 'key'
+2022-05-15 16:47:56,847 - FABLAB - ERROR - admin - Error in get_form: 'key'
+2022-05-15 16:50:40,612 - FABLAB - INFO - NONE - start Fablab
+2022-05-15 16:53:29,416 - FABLAB - INFO - NONE - start Fablab
+2022-05-15 18:02:38,980 - FABLAB - INFO - NONE - start Fablab
+2022-05-15 18:02:49,155 - FABLAB - ERROR - admin - Could not edit guest Object of type Visitor is not JSON serializable
+2022-05-15 18:03:51,420 - FABLAB - INFO - NONE - start Fablab
+2022-05-15 18:03:55,221 - FABLAB - ERROR - admin - Could not edit guest Object of type Undefined is not JSON serializable
+2022-05-15 18:05:11,776 - FABLAB - ERROR - admin - Could not edit guest Object of type Undefined is not JSON serializable
+2022-05-15 18:06:58,693 - FABLAB - INFO - NONE - start Fablab
+2022-05-15 18:08:42,806 - FABLAB - ERROR - admin - Could not edit guest Object of type Undefined is not JSON serializable
+2022-05-15 18:08:42,807 - FABLAB - ERROR - admin - Could not edit guest Object of type Undefined is not JSON serializable
+2022-05-15 18:10:43,732 - FABLAB - INFO - NONE - start Fablab
+2022-05-15 18:12:49,884 - FABLAB - INFO - NONE - start Fablab
+2022-05-15 18:22:12,398 - FABLAB - INFO - NONE - start Fablab
+2022-05-15 18:22:41,305 - FABLAB - INFO - admin - Update visitor: borowski manuel, {'last_name': 'borowski', 'first_name': 'manuel', 'subscription_type': 'jaarabonnement', 'email': 'emmanuel.borowski@gmail.com', 'phone': '+32496065435', 'badge_number': '1200', 'badge_input': 'à\'\'!&§§é&"', 'badge_code': '', 'visits': [{'id': 6, 'time_in': '10/10/1010 10:10', 'time_out': '10/10/1010 10:20', 'visitor_id': 5}, {'id': 2, 'time_in': '11/10/1010 10:10', 'time_out': '11/10/1010 10:20', 'visitor_id': 5}, {'id': 5, 'time_in': '13/10/1010 10:10', 'time_out': '13/10/1010 01:02', 'visitor_id': 5}], 'paygo_left': '', 'paygo_max': '', 'subscription_from': datetime.date(2022, 5, 12)}
+2022-05-15 18:24:15,219 - FABLAB - INFO - admin - Update visitor: borowski manuel, {'last_name': 'borowski', 'first_name': 'manuel', 'subscription_type': 'jaarabonnement', 'email': 'emmanuel.borowski@gmail.com', 'phone': '+32496065435', 'badge_number': '1200', 'badge_input': '"!\'!§àçè&(', 'badge_code': '', 'visits': [{'id': 6, 'time_in': '10/10/1010 10:10', 'time_out': '10/10/1010 10:20', 'visitor_id': 5}, {'id': 2, 'time_in': '11/10/1010 10:10', 'time_out': '11/10/1010 10:20', 'visitor_id': 5}, {'id': 5, 'time_in': '13/10/1010 10:10', 'time_out': '13/10/1010 01:02', 'visitor_id': 5}], 'paygo_left': '', 'paygo_max': '', 'subscription_from': datetime.date(2022, 5, 12)}
+2022-05-15 18:26:02,546 - FABLAB - INFO - admin - Update visitor: borowski manuel, {'last_name': 'borowski', 'first_name': 'manuel', 'subscription_type': 'jaarabonnement', 'email': 'emmanuel.borowski@gmail.com', 'phone': '+32496065435', 'badge_number': '1200', 'badge_input': 'à\'\'!&§§é&"', 'badge_code': '', 'visits': [{'id': 6, 'time_in': '10/10/1010 10:10', 'time_out': '10/10/1010 10:20', 'visitor_id': 5}, {'id': 2, 'time_in': '11/10/1010 10:10', 'time_out': '11/10/1010 10:20', 'visitor_id': 5}, {'id': 5, 'time_in': '13/10/1010 10:10', 'time_out': '13/10/1010 01:02', 'visitor_id': 5}], 'paygo_left': '', 'paygo_max': '', 'subscription_from': datetime.date(2022, 5, 12)}
+2022-05-15 18:29:30,298 - FABLAB - INFO - NONE - start Fablab
+2022-05-15 18:29:31,825 - FABLAB - INFO - admin - Update visitor: borowski manuel, {'last_name': 'borowski', 'first_name': 'manuel', 'subscription_type': 'jaarabonnement', 'email': 'emmanuel.borowski@gmail.com', 'phone': '+32496065435', 'badge_number': '1200', 'badge_input': '"!\'!§àçè&(', 'badge_code': '', 'visits': [{'id': 6, 'time_in': '10/10/1010 10:10', 'time_out': '10/10/1010 10:20', 'visitor_id': 5}, {'id': 2, 'time_in': '11/10/1010 10:10', 'time_out': '11/10/1010 10:20', 'visitor_id': 5}, {'id': 5, 'time_in': '13/10/1010 10:10', 'time_out': '13/10/1010 01:02', 'visitor_id': 5}], 'paygo_left': '', 'paygo_max': '', 'subscription_from': datetime.date(2022, 5, 12)}
+2022-05-15 18:30:07,026 - FABLAB - INFO - admin - Update visitor: borowski manuel, {'last_name': 'borowski', 'first_name': 'manuel', 'subscription_type': 'jaarabonnement', 'email': 'emmanuel.borowski@gmail.com', 'phone': '+32496065435', 'badge_number': '1200', 'badge_input': '"!\'!§àçè&(', 'badge_code': '', 'visits': [{'id': 6, 'time_in': '10/10/1010 10:10', 'time_out': '10/10/1010 10:20', 'visitor_id': 5}, {'id': 2, 'time_in': '11/10/1010 10:10', 'time_out': '11/10/1010 10:20', 'visitor_id': 5}, {'id': 5, 'time_in': '13/10/1010 10:10', 'time_out': '13/10/1010 01:02', 'visitor_id': 5}], 'paygo_left': '', 'paygo_max': '', 'subscription_from': datetime.date(2022, 5, 12)}
+2022-05-15 18:31:22,850 - FABLAB - INFO - NONE - start Fablab
+2022-05-15 18:31:58,949 - FABLAB - INFO - admin - Update visitor: borowski manuel, {'last_name': 'borowski', 'first_name': 'manuel', 'subscription_type': 'jaarabonnement', 'email': 'emmanuel.borowski@gmail.com', 'phone': '+32496065435', 'badge_number': '1200', 'badge_input': 'à\'\'!&§§é&"', 'badge_code': '4579B61A', 'visits': [{'id': 6, 'time_in': '10/10/1010 10:10', 'time_out': '10/10/1010 10:20', 'visitor_id': 5}, {'id': 2, 'time_in': '11/10/1010 10:10', 'time_out': '11/10/1010 10:20', 'visitor_id': 5}, {'id': 5, 'time_in': '13/10/1010 10:10', 'time_out': '13/10/1010 01:02', 'visitor_id': 5}], 'paygo_left': '', 'paygo_max': '', 'subscription_from': datetime.date(2022, 5, 12)}
+2022-05-15 18:32:38,721 - FABLAB - INFO - admin - Update visitor: qdsfqdf qsdfqsdf, {'last_name': 'qdsfqdf', 'first_name': 'qsdfqsdf', 'subscription_type': '', 'email': '', 'phone': '', 'badge_number': '', 'badge_input': '"!\'!§àçè&(', 'badge_code': 'B31F65E5', 'visits': [], 'paygo_left': '', 'paygo_max': '', 'subscription_from': datetime.date(2022, 5, 14)}
+2022-05-15 18:33:08,747 - FABLAB - INFO - admin - Update visitor: testa testb, {'last_name': 'testa', 'first_name': 'testb', 'subscription_type': '', 'email': '', 'phone': '', 'badge_number': '', 'badge_input': '"!\'!§àçè&(', 'badge_code': 'B31F65E5', 'visits': [], 'paygo_left': '', 'paygo_max': '', 'subscription_from': None}
+2022-05-15 18:33:46,742 - FABLAB - INFO - NONE - start Fablab
+2022-05-15 18:52:47,968 - FABLAB - INFO - admin - Update visitor: qdsfqdf qsdfqsdf, {'last_name': 'qdsfqdf', 'first_name': 'qsdfqsdf', 'subscription_type': '', 'email': '', 'phone': '', 'badge_number': '', 'badge_input': '', 'badge_code': '', 'wisBadge': True, 'visits': [], 'paygo_left': '', 'paygo_max': '', 'subscription_from': datetime.date(2022, 5, 14)}
+2022-05-15 18:54:04,022 - FABLAB - ERROR - admin - Could not add visitor Object of type Undefined is not JSON serializable
+2022-05-15 18:54:45,339 - FABLAB - INFO - NONE - start Fablab
+2022-05-15 18:54:58,725 - FABLAB - INFO - admin - Update visitor: borowski manuel, {'last_name': 'borowski', 'first_name': 'manuel', 'subscription_type': 'jaarabonnement', 'email': 'emmanuel.borowski@gmail.com', 'phone': '+32496065435', 'badge_number': '1200', 'badge_input': '', 'badge_code': '', 'wisBadge': True, 'visits': [{'id': 6, 'time_in': '10/10/1010 10:10', 'time_out': '10/10/1010 10:20', 'visitor_id': 5}, {'id': 2, 'time_in': '11/10/1010 10:10', 'time_out': '11/10/1010 10:20', 'visitor_id': 5}, {'id': 5, 'time_in': '13/10/1010 10:10', 'time_out': '13/10/1010 01:02', 'visitor_id': 5}], 'paygo_left': '', 'paygo_max': '', 'subscription_from': datetime.date(2022, 5, 12)}
+2022-05-16 07:51:43,869 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 07:51:53,305 - FABLAB - INFO - admin - Update visitor: testa testb, {'last_name': 'testa', 'first_name': 'testb', 'subscription_type': '', 'email': '', 'phone': '', 'badge_number': '100', 'badge_input': '', 'badge_code': 'B31F65E5', 'wisBadge': False, 'visits': [], 'paygo_left': '', 'paygo_max': '', 'subscription_from': None}
+2022-05-16 07:52:27,652 - FABLAB - INFO - admin - Update visitor: borowski manuel, {'last_name': 'borowski', 'first_name': 'manuel', 'subscription_type': 'jaarabonnement', 'email': 'emmanuel.borowski@gmail.com', 'phone': '+32496065435', 'badge_number': '100', 'badge_input': '"!\'!§àçè&(', 'badge_code': 'B31F65E5', 'wisBadge': False, 'visits': [{'id': 6, 'time_in': '10/10/1010 10:10', 'time_out': '10/10/1010 10:20', 'visitor_id': 5}, {'id': 2, 'time_in': '11/10/1010 10:10', 'time_out': '11/10/1010 10:20', 'visitor_id': 5}, {'id': 5, 'time_in': '13/10/1010 10:10', 'time_out': '13/10/1010 01:02', 'visitor_id': 5}], 'paygo_left': '', 'paygo_max': '', 'subscription_from': datetime.date(2022, 5, 12)}
+2022-05-16 07:54:31,632 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 07:57:52,433 - FABLAB - ERROR - admin - Could not add visitor Object of type Undefined is not JSON serializable
+2022-05-16 07:58:58,783 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 08:01:04,092 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 08:07:32,683 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 08:08:23,561 - FABLAB - INFO - admin - Update visitor: qdsfqdf qsdfqsdf, {'last_name': 'qdsfqdf', 'first_name': 'qsdfqsdf', 'subscription_type': 'niet-actief', 'email': '', 'phone': '', 'badge_input': '', 'badge_code': 'B31F65E5', 'wisBadge': False, 'badge_number': '100', 'visits': [], 'paygo_left': '', 'paygo_max': '', 'subscription_from': datetime.date(2022, 5, 14)}
+2022-05-16 08:08:43,016 - FABLAB - INFO - admin - Update visitor: borowski manuel, {'last_name': 'borowski', 'first_name': 'manuel', 'subscription_type': 'jaarabonnement', 'email': 'emmanuel.borowski@gmail.com', 'phone': '+32496065435', 'badge_input': '', 'badge_code': '4579B61A', 'wisBadge': False, 'badge_number': '101', 'visits': [{'id': 6, 'time_in': '10/10/1010 10:10', 'time_out': '10/10/1010 10:20', 'visitor_id': 5}, {'id': 2, 'time_in': '11/10/1010 10:10', 'time_out': '11/10/1010 10:20', 'visitor_id': 5}, {'id': 5, 'time_in': '13/10/1010 10:10', 'time_out': '13/10/1010 01:02', 'visitor_id': 5}], 'paygo_left': '', 'paygo_max': '', 'subscription_from': datetime.date(2022, 5, 12)}
+2022-05-16 08:09:34,268 - FABLAB - INFO - admin - Add visitor: a4 v4, {'last_name': 'a4', 'first_name': 'v4', 'subscription_type': 'jaarabonnement', 'email': '', 'email_confirm': '', 'phone': '', 'badge_input': '', 'badge_code': '4579B61A', 'wisBadge': False, 'badge_number': '101', 'visits': [], 'id': '', 'subscription_from': datetime.date(2022, 5, 16)}
+2022-05-16 08:30:13,408 - FABLAB - INFO - admin - Update visitor: testa testb, {'last_name': 'testa', 'first_name': 'testb', 'subscription_type': 'niet-actief', 'email': '', 'phone': '', 'badge_input': '', 'badge_code': '', 'wisBadge': False, 'badge_number': '', 'visits': [], 'paygo_left': '', 'paygo_max': '', 'subscription_from': None}
+2022-05-16 08:30:36,350 - FABLAB - INFO - admin - Update visitor: borowski manuel, {'last_name': 'borowski', 'first_name': 'manuel', 'subscription_type': 'jaarabonnement', 'email': 'emmanuel.borowski@gmail.com', 'phone': '+32496065435', 'badge_input': '', 'badge_code': '4579B61A', 'wisBadge': False, 'badge_number': '101', 'visits': [{'id': 6, 'time_in': '10/10/1010 10:10', 'time_out': '10/10/1010 10:20', 'visitor_id': 5}, {'id': 2, 'time_in': '11/10/1010 10:10', 'time_out': '11/10/1010 10:20', 'visitor_id': 5}, {'id': 5, 'time_in': '13/10/1010 10:10', 'time_out': '13/10/1010 01:02', 'visitor_id': 5}], 'paygo_left': '', 'paygo_max': '', 'subscription_from': datetime.date(2022, 5, 12)}
+2022-05-16 08:30:59,858 - FABLAB - INFO - admin - Update visitor: a4 v4, {'last_name': 'a4', 'first_name': 'v4', 'subscription_type': 'jaarabonnement', 'email': '', 'phone': '', 'badge_input': '', 'badge_code': 'B31F65E5', 'wisBadge': False, 'badge_number': '100', 'visits': [], 'paygo_left': '', 'paygo_max': '', 'subscription_from': datetime.date(2022, 5, 16)}
+2022-05-16 08:56:34,155 - FABLAB - INFO - admin - User logged out
+2022-05-16 09:08:59,776 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 09:35:45,867 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 09:37:58,483 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 09:39:59,791 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 09:40:25,088 - FABLAB - INFO - admin - user admin logged in
+2022-05-16 09:40:28,625 - FABLAB - INFO - admin - add: <Setting: 12/visit-datatables-template/{}/STRING>
+2022-05-16 09:40:51,395 - FABLAB - INFO - admin - User logged out
+2022-05-16 09:40:55,935 - FABLAB - INFO - admin - user admin logged in
+2022-05-16 09:41:19,298 - FABLAB - INFO - admin - user admin logged in
+2022-05-16 10:31:28,365 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 10:31:32,785 - FABLAB - ERROR - admin - could not prepare data for ajax: Can't resolve label reference for ORDER BY / GROUP BY / DISTINCT etc. Textual SQL expression 'first_name' should be explicitly declared as text('first_name')
+2022-05-16 10:31:51,489 - FABLAB - ERROR - admin - could not prepare data for ajax: Can't resolve label reference for ORDER BY / GROUP BY / DISTINCT etc. Textual SQL expression 'first_name' should be explicitly declared as text('first_name')
+2022-05-16 10:35:26,618 - FABLAB - ERROR - admin - could not prepare data for ajax: Can't resolve label reference for ORDER BY / GROUP BY / DISTINCT etc. Textual SQL expression 'first_name' should be explicitly declared as text('first_name')
+2022-05-16 10:36:58,781 - FABLAB - ERROR - admin - could not prepare data for ajax: Can't resolve label reference for ORDER BY / GROUP BY / DISTINCT etc. Textual SQL expression 'visitor.last_name' should be explicitly declared as text('visitor.last_name')
+2022-05-16 10:42:19,420 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 10:53:09,071 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 10:58:06,575 - FABLAB - ERROR - admin - could not prepare data for ajax: type object 'Visitor' has no attribute 's_first_name'
+2022-05-16 10:58:07,216 - FABLAB - ERROR - admin - could not prepare data for ajax: type object 'Visitor' has no attribute 's_first_name'
+2022-05-16 10:58:08,856 - FABLAB - ERROR - admin - could not prepare data for ajax: type object 'Visitor' has no attribute 's_first_name'
+2022-05-16 10:58:09,492 - FABLAB - ERROR - admin - could not prepare data for ajax: type object 'Visitor' has no attribute 's_first_name'
+2022-05-16 10:59:17,736 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 11:00:11,424 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 11:00:47,974 - FABLAB - ERROR - admin - get_visitors: 'int' object is not subscriptable
+2022-05-16 11:01:52,695 - FABLAB - ERROR - admin - get_visitors: 'int' object is not subscriptable
+2022-05-16 11:02:43,761 - FABLAB - ERROR - admin - get_visitors: 'int' object is not subscriptable
+2022-05-16 11:03:05,220 - FABLAB - ERROR - admin - get_visitors: 'int' object is not subscriptable
+2022-05-16 11:33:15,700 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 11:34:40,732 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 11:35:03,261 - FABLAB - INFO - admin - Update visitor: a4 v4, {'last_name': 'a4', 'first_name': 'v4', 'subscription_type': 'jaarabonnement', 'email': '', 'phone': '', 'badge_input': '', 'badge_code': 'B31F65E5', 'wisBadge': False, 'badge_number': '100', 'visits': [], 'paygo_left': '', 'paygo_max': '', 'subscription_from': datetime.date(2022, 5, 16)}
+2022-05-16 11:35:34,277 - FABLAB - INFO - admin - Update visitor: a4 v4, {'last_name': 'a4', 'first_name': 'v4', 'subscription_type': 'jaarabonnement', 'email': '', 'phone': '', 'badge_input': '', 'badge_code': 'B31F65E5', 'wisBadge': False, 'badge_number': '100', 'visits': [{'time_in': datetime.datetime(2020, 10, 10, 10, 20), 'time_out': datetime.datetime(2020, 10, 10, 11, 0), 'visitor': <Visitor 8>}], 'paygo_left': '', 'paygo_max': '', 'subscription_from': datetime.date(2022, 5, 16)}
+2022-05-16 11:43:09,766 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 11:51:47,479 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 11:52:09,772 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 12:50:10,718 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 13:03:03,898 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 13:04:51,650 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 13:06:56,954 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 13:12:06,873 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 13:18:29,839 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 13:19:12,594 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 13:20:53,594 - FABLAB - INFO - admin - User logged out
+2022-05-16 13:36:50,204 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 13:37:38,074 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 13:41:11,446 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 13:41:33,794 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 13:49:07,946 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 13:54:00,713 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 14:29:16,858 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 14:55:51,588 - FABLAB - INFO - admin - user admin logged in
+2022-05-16 14:58:48,291 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 15:15:43,565 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 15:16:12,827 - FABLAB - INFO - admin - Add visitor: a5 v5, {'last_name': 'a5', 'first_name': 'v5', 'subscription_type': 'jaarabonnement', 'email': '', 'email_confirm': '', 'phone': '', 'badge_input': '', 'badge_code': 'B31F65E5', 'wisBadge': False, 'badge_number': '100', 'visits': [], 'id': '', 'subscription_from': datetime.date(2022, 5, 16)}
+2022-05-16 15:21:15,880 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 15:22:12,266 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 15:24:25,553 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 15:24:57,624 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 15:34:47,871 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 15:35:23,942 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 15:35:49,388 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 15:36:35,860 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 15:38:32,560 - FABLAB - INFO - NONE - start Fablab
+2022-05-16 15:38:42,210 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 09:51:34,984 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 09:53:08,220 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 09:53:54,394 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 09:54:00,667 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 09:55:43,564 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 09:55:51,846 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 09:55:58,476 - FABLAB - ERROR - admin - badge_entered gave error : 'Visitor' object has no attribute 'is_subscriber'
+2022-05-17 10:02:39,662 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 10:04:28,289 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 10:05:12,007 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 10:30:40,572 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 10:33:43,466 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 10:38:16,304 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 10:39:57,791 - FABLAB - INFO - admin - Update visitor: a4 v4, {'last_name': 'a4', 'first_name': 'v4', 'subscription_type': 'jaarabonnement', 'subscription_from': datetime.date(2022, 5, 16), 'email': '', 'phone': '', 'badge_input': '', 'badge_code': 'B31F65E5', 'wisBadge': False, 'badge_number': '100', 'visits': [{'id': 7, 'time_in': '10/10/2020 10:20', 'time_out': '10/10/2020 11:00', 'visitor_id': 8}], 'paygo_left': '', 'paygo_max': ''}
+2022-05-17 10:40:53,897 - FABLAB - INFO - admin - B31F65E5: registration IN
+2022-05-17 11:58:23,856 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 11:58:33,839 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-17 11:59:13,587 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 12:00:59,002 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-17 12:01:35,193 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 12:01:48,604 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-17 12:02:00,644 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-17 12:08:38,625 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 12:08:48,148 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-17 12:25:07,258 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 12:30:05,536 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-17 12:30:27,942 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-17 12:31:51,624 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 12:31:55,032 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-17 12:37:18,114 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 12:37:24,261 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-17 12:38:03,078 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 12:38:08,901 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-17 12:38:31,398 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-17 12:39:18,001 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 12:39:21,324 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-17 12:39:54,539 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-17 12:40:59,759 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 12:41:01,981 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-17 12:42:44,995 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 12:42:51,129 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-17 12:42:55,018 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-17 12:42:59,651 - FABLAB - INFO - admin - 4579B61A: registration IN
+2022-05-17 12:43:02,819 - FABLAB - INFO - admin - 4579B61A: registration OUT
+2022-05-17 12:43:04,603 - FABLAB - INFO - admin - 4579B61A: registration OUT
+2022-05-17 12:43:05,763 - FABLAB - INFO - admin - 4579B61A: registration OUT
+2022-05-17 12:43:27,712 - FABLAB - ERROR - admin - update_visitor: 'subscription_from'
+2022-05-17 12:43:27,714 - FABLAB - ERROR - admin - {'last_name': 'borowski', 'first_name': 'manuel', 'subscription_type': 'beurtenkaart', 'email': 'emmanuel.borowski@gmail.com', 'phone': '+32496065435', 'badge_input': '', 'badge_code': '4579B61A', 'wisBadge': False, 'badge_number': '101', 'visits': [{'id': 6, 'time_in': '10/10/1010 10:10', 'time_out': '10/10/1010 10:20', 'visitor_id': 5}, {'id': 2, 'time_in': '11/10/1010 10:10', 'time_out': '11/10/1010 10:20', 'visitor_id': 5}, {'id': 5, 'time_in': '13/10/1010 10:10', 'time_out': '13/10/1010 01:02', 'visitor_id': 5}, {'id': 9, 'time_in': '17/05/2022 12:42', 'time_out': '17/05/2022 12:43', 'visitor_id': 5}], 'paygo_left': 5, 'paygo_max': 5}
+2022-05-17 13:50:11,506 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 13:50:20,612 - FABLAB - INFO - admin - Update visitor: a4 v4, {'last_name': 'a4', 'first_name': 'v4', 'subscription_type': 'beurtenkaart', 'subscription_from': datetime.date(2022, 5, 16), 'email': '', 'phone': '', 'badge_input': '', 'badge_code': 'B31F65E5', 'wisBadge': False, 'badge_number': '100', 'visits': [{'id': 7, 'time_in': '10/10/2020 10:20', 'time_out': '10/10/2020 11:00', 'visitor_id': 8}, {'id': 8, 'time_in': '17/05/2022 10:40', 'time_out': '17/05/2022 12:42', 'visitor_id': 8}], 'paygo_left': 5, 'paygo_max': 5}
+2022-05-17 13:50:32,487 - FABLAB - INFO - admin - 4579B61A: registration OUT
+2022-05-17 13:50:36,239 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-17 13:50:38,145 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-17 13:50:40,235 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-17 13:50:42,851 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-17 13:51:30,234 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 13:52:50,627 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-17 13:53:26,219 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-17 13:53:42,818 - FABLAB - INFO - admin - Update visitor: a4 v4, {'last_name': 'a4', 'first_name': 'v4', 'subscription_type': 'beurtenkaart', 'subscription_from': datetime.date(2022, 5, 16), 'email': '', 'phone': '', 'badge_input': '', 'badge_code': 'B31F65E5', 'wisBadge': False, 'badge_number': '100', 'visits': [], 'paygo_left': 5, 'paygo_max': 5}
+2022-05-17 13:54:23,858 - FABLAB - INFO - admin - B31F65E5: registration IN
+2022-05-17 13:54:50,138 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-17 13:55:28,120 - FABLAB - INFO - admin - Update visitor: a4 v4, {'last_name': 'a4', 'first_name': 'v4', 'subscription_type': 'beurtenkaart', 'subscription_from': datetime.date(2022, 5, 16), 'email': '', 'phone': '', 'badge_input': '', 'badge_code': 'B31F65E5', 'wisBadge': False, 'badge_number': '100', 'visits': [], 'paygo_left': 0, 'paygo_max': 5}
+2022-05-17 13:59:16,584 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 14:00:09,697 - FABLAB - INFO - admin - 4579B61A: registration OUT
+2022-05-17 14:00:22,564 - FABLAB - INFO - admin - 4579B61A: registration OUT
+2022-05-17 14:00:25,587 - FABLAB - INFO - admin - 4579B61A: registration OUT
+2022-05-17 14:00:28,542 - FABLAB - INFO - admin - 4579B61A: registration OUT
+2022-05-17 14:00:31,463 - FABLAB - INFO - admin - 4579B61A: registration OUT
+2022-05-17 14:02:52,013 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 14:03:09,817 - FABLAB - INFO - admin - visit: Opgelet, uw beurtenkaart is verlopen.<br>Vraag info aan een medewerker.
+2022-05-17 14:03:17,711 - FABLAB - INFO - admin - 4579B61A: registration OUT
+2022-05-17 14:03:17,729 - FABLAB - INFO - admin - visit: Hallo manuel, u hebt juist UIT gebadged om 14:03.<br><br>Uw abonnement is nog 360 dagen geldig.
+2022-05-17 14:05:17,146 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 14:05:19,263 - FABLAB - INFO - admin - visit: Opgelet v4 , uw beurtenkaart is verlopen.<br>Vraag info aan een medewerker.
+2022-05-17 14:05:37,502 - FABLAB - INFO - admin - Update visitor: borowski manuel, {'last_name': 'borowski', 'first_name': 'manuel', 'subscription_type': 'niet-actief', 'email': 'emmanuel.borowski@gmail.com', 'phone': '+32496065435', 'badge_input': '', 'badge_code': '4579B61A', 'wisBadge': False, 'badge_number': '101', 'visits': [{'id': 6, 'time_in': '10/10/1010 10:10', 'time_out': '10/10/1010 10:20', 'visitor_id': 5}, {'id': 2, 'time_in': '11/10/1010 10:10', 'time_out': '11/10/1010 10:20', 'visitor_id': 5}, {'id': 5, 'time_in': '13/10/1010 10:10', 'time_out': '13/10/1010 01:02', 'visitor_id': 5}, {'id': 9, 'time_in': '17/05/2022 12:42', 'time_out': '17/05/2022 14:03', 'visitor_id': 5}], 'paygo_left': '', 'paygo_max': ''}
+2022-05-17 14:05:43,086 - FABLAB - INFO - admin - visit: Bezoeker manuel is niet meer actief
+2022-05-17 14:05:48,918 - FABLAB - INFO - admin - visit: Bezoeker manuel is niet meer actief
+2022-05-17 14:06:05,340 - FABLAB - INFO - admin - Update visitor: qdsfqdf qsdfqsdf, {'last_name': 'qdsfqdf', 'first_name': 'qsdfqsdf', 'subscription_type': 'niet-actief', 'subscription_from': datetime.date(2022, 5, 14), 'email': '', 'phone': '', 'badge_input': '', 'badge_code': '4579B61A', 'wisBadge': False, 'badge_number': '101', 'visits': [], 'paygo_left': '', 'paygo_max': ''}
+2022-05-17 14:06:17,554 - FABLAB - INFO - admin - Update visitor: qdsfqdf qsdfqsdf, {'last_name': 'qdsfqdf', 'first_name': 'qsdfqsdf', 'subscription_type': 'jaarabonnement', 'subscription_from': datetime.date(2022, 5, 14), 'email': '', 'phone': '', 'badge_input': '', 'badge_code': '4579B61A', 'wisBadge': False, 'badge_number': '101', 'visits': [], 'paygo_left': '', 'paygo_max': ''}
+2022-05-17 14:06:21,712 - FABLAB - INFO - admin - 4579B61A: registration IN
+2022-05-17 14:06:21,743 - FABLAB - INFO - admin - visit: Hallo qsdfqsdf, u hebt juist IN gebadged om 14:06.<br><br>qsdfqsdf uw abonnement is nog 362 dagen geldig.
+2022-05-17 14:06:36,371 - FABLAB - INFO - admin - Update visitor: qdsfqdf qsdfqsdf, {'last_name': 'qdsfqdf', 'first_name': 'qsdfqsdf', 'subscription_type': 'jaarabonnement', 'subscription_from': datetime.date(2020, 5, 14), 'email': '', 'phone': '', 'badge_input': '', 'badge_code': '4579B61A', 'wisBadge': False, 'badge_number': '101', 'visits': [{'id': 11, 'time_in': '17/05/2022 14:06', 'time_out': '', 'visitor_id': 6}], 'paygo_left': '', 'paygo_max': ''}
+2022-05-17 14:06:42,653 - FABLAB - INFO - admin - visit: Opgelet qsdfqsdf, uw abonnement is verlopen.<br>Vraag info aan een medewerker.
+2022-05-17 14:07:08,940 - FABLAB - INFO - admin - visit: Opgelet qsdfqsdf, uw abonnement is verlopen.<br>Vraag info aan een medewerker.
+2022-05-17 14:07:14,973 - FABLAB - INFO - admin - visit: Opgelet v4 , uw beurtenkaart is verlopen.<br>Vraag info aan een medewerker.
+2022-05-17 14:13:47,833 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 14:17:05,926 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 14:18:10,987 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 14:21:18,432 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 15:16:50,807 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 15:17:58,434 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 15:22:58,015 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 15:23:35,169 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 15:25:49,644 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 15:25:52,073 - FABLAB - INFO - admin - visit: Opgelet v4 , uw beurtenkaart is verlopen.<br>Vraag info aan een medewerker.
+2022-05-17 15:25:57,080 - FABLAB - INFO - admin - visit: Opgelet qsdfqsdf, uw abonnement is verlopen.<br>Vraag info aan een medewerker.
+2022-05-17 15:29:38,365 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 15:32:27,460 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 15:34:01,158 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 15:40:10,708 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 15:40:21,868 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 15:41:53,871 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 15:42:29,722 - FABLAB - INFO - admin - Update visitor: borowski manuel, {'last_name': 'borowski', 'first_name': 'manuel', 'subscription_type': 'beurtenkaart', 'subscription_from': datetime.date(2022, 5, 12), 'email': 'emmanuel.borowski@gmail.com', 'phone': '+32496065435', 'badge_input': '', 'badge_code': '', 'wisBadge': False, 'badge_number': '', 'visits': [{'id': 9, 'time_in': '17/05/2022 12:42', 'time_out': '17/05/2022 14:03', 'visitor_id': 5}, {'id': 5, 'time_in': '13/10/1010 10:10', 'time_out': '13/10/1010 01:02', 'visitor_id': 5}, {'id': 2, 'time_in': '11/10/1010 10:10', 'time_out': '11/10/1010 10:20', 'visitor_id': 5}, {'id': 6, 'time_in': '10/10/1010 10:10', 'time_out': '10/10/1010 10:20', 'visitor_id': 5}], 'paygo_left': 12, 'paygo_max': 12}
+2022-05-17 15:42:36,164 - FABLAB - INFO - admin - visit: Opgelet qsdfqsdf, uw abonnement is verlopen.<br>Vraag info aan een medewerker.
+2022-05-17 15:42:41,843 - FABLAB - INFO - admin - visit: Opgelet v4 , uw beurtenkaart is verlopen.<br>Vraag info aan een medewerker.
+2022-05-17 15:43:08,689 - FABLAB - INFO - admin - Update visitor: a4 v4, {'last_name': 'a4', 'first_name': 'v4', 'subscription_type': 'beurtenkaart', 'subscription_from': datetime.date(2022, 5, 16), 'email': '', 'phone': '', 'badge_input': '', 'badge_code': 'B31F65E5', 'wisBadge': False, 'badge_number': '100', 'visits': [], 'paygo_left': 5, 'paygo_max': 5}
+2022-05-17 15:43:12,228 - FABLAB - INFO - admin - B31F65E5: registration IN
+2022-05-17 15:43:12,245 - FABLAB - INFO - admin - visit: Hallo v4, u hebt juist IN gebadged om 15:43.<br><br>v4, u heeft nog 4 beurten
+2022-05-17 15:45:48,374 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-17 15:45:48,393 - FABLAB - INFO - admin - visit: Hallo v4, u hebt juist UIT gebadged om 15:45.<br><br>v4, u heeft nog 4 beurten
+2022-05-17 15:46:28,767 - FABLAB - INFO - admin - Update visitor: borowski manuel, {'last_name': 'borowski', 'first_name': 'manuel', 'subscription_type': 'beurtenkaart', 'subscription_from': datetime.date(2022, 5, 12), 'email': 'emmanuel.borowski@gmail.com', 'phone': '+32496065435', 'badge_input': '', 'badge_code': '', 'wisBadge': False, 'badge_number': '', 'visits': [], 'paygo_left': 12, 'paygo_max': 12}
+2022-05-17 15:51:28,709 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 16:09:45,228 - FABLAB - INFO - admin - User logged out
+2022-05-17 16:09:50,083 - FABLAB - INFO - admin - user admin logged in
+2022-05-17 16:10:19,648 - FABLAB - INFO - admin - Add user: {'username': 'ict', 'last_name': '', 'first_name': '', 'email': '', 'level': 5, 'user_type': 'local', 'new_password': True, 'submit': True, 'annuleer': False, 'id': '', 'password': 'Murphy971!', 'confirm_password': 'Murphy971!'}
+2022-05-17 16:10:24,249 - FABLAB - INFO - admin - User logged out
+2022-05-17 16:10:31,236 - FABLAB - INFO - ict - user ict logged in
+2022-05-17 16:11:45,034 - FABLAB - INFO - ict - Update user: {'username': 'admin', 'last_name': '', 'first_name': '', 'email': '', 'level': 5, 'user_type': 'local', 'new_password': True, 'submit': True, 'annuleer': False, 'password': 'test', 'confirm_password': 'test'}
+2022-05-17 16:13:42,028 - FABLAB - INFO - ict - Update user: {'username': 'admin', 'last_name': '', 'first_name': '', 'email': '', 'level': 5, 'user_type': 'local', 'new_password': True, 'submit': True, 'annuleer': False, 'password': 'test', 'confirm_password': 'test'}
+2022-05-17 16:15:53,466 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 16:15:59,935 - FABLAB - INFO - ict - Update user: {'username': 'admin', 'last_name': '', 'first_name': '', 'email': '', 'level': 5, 'user_type': 'local', 'new_password': True, 'submit': True, 'annuleer': False, 'password': 'test', 'confirm_password': 'test'}
+2022-05-17 16:17:26,316 - FABLAB - INFO - ict - Update user: {'username': 'admin', 'last_name': '', 'first_name': '', 'email': '', 'level': 5, 'user_type': 'local', 'new_password': True, 'submit': True, 'annuleer': False, 'password': 'test', 'confirm_password': 'test'}
+2022-05-17 16:17:30,774 - FABLAB - INFO - ict - User logged out
+2022-05-17 16:17:36,113 - FABLAB - INFO - admin - user admin logged in
+2022-05-17 16:17:39,326 - FABLAB - INFO - admin - User logged out
+2022-05-17 16:17:44,469 - FABLAB - ERROR - NONE - Invalid username/password
+2022-05-17 16:17:56,467 - FABLAB - INFO - ict - user ict logged in
+2022-05-17 16:18:19,068 - FABLAB - INFO - ict - Update user: {'username': 'admin', 'last_name': '', 'first_name': '', 'email': '', 'level': 5, 'user_type': 'local', 'new_password': True, 'submit': True, 'annuleer': False, 'password': 'admin', 'confirm_password': 'admin'}
+2022-05-17 16:18:21,642 - FABLAB - INFO - ict - User logged out
+2022-05-17 16:18:25,806 - FABLAB - INFO - admin - user admin logged in
+2022-05-17 20:08:05,905 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 20:08:49,993 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-17 20:08:50,025 - FABLAB - INFO - admin - visit: Hallo v4, u hebt juist UIT gebadged om 20:08.<br><br>v4, u heeft nog 4 beurten
+2022-05-17 20:08:52,603 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-17 20:08:52,620 - FABLAB - INFO - admin - visit: Hallo v4, u hebt juist UIT gebadged om 20:08.<br><br>v4, u heeft nog 4 beurten
+2022-05-17 20:08:55,502 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-17 20:08:55,520 - FABLAB - INFO - admin - visit: Hallo v4, u hebt juist UIT gebadged om 20:08.<br><br>v4, u heeft nog 4 beurten
+2022-05-17 20:10:21,247 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 20:12:24,703 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 20:12:45,561 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 20:13:13,007 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 20:13:46,584 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 20:13:58,852 - FABLAB - INFO - admin - user admin logged in
+2022-05-17 20:18:55,355 - FABLAB - INFO - admin - user admin logged in
+2022-05-17 20:22:24,402 - FABLAB - INFO - admin - user admin logged in
+2022-05-17 20:22:26,952 - FABLAB - INFO - admin - User logged out
+2022-05-17 20:35:17,620 - FABLAB - INFO - NONE - start Fablab
+2022-05-17 20:35:26,065 - FABLAB - INFO - admin - user admin logged in
+2022-05-17 20:35:30,298 - FABLAB - INFO - admin - User logged out
+2022-05-17 20:35:40,033 - FABLAB - ERROR - NONE - Invalid username/password
+2022-05-17 20:35:44,691 - FABLAB - INFO - admin - user admin logged in
+2022-05-17 20:39:21,640 - FABLAB - INFO - admin - user admin logged in
+2022-05-18 07:38:27,996 - FABLAB - INFO - NONE - start Fablab
+2022-05-18 07:40:30,306 - FABLAB - INFO - NONE - start Fablab
+2022-05-18 07:45:19,878 - FABLAB - INFO - NONE - start Fablab
+2022-05-18 07:46:07,353 - FABLAB - INFO - admin - user admin logged in
+2022-05-18 07:46:18,886 - FABLAB - INFO - NONE - start Fablab
+2022-05-18 07:49:26,172 - FABLAB - INFO - NONE - start Fablab
+2022-05-18 07:50:24,318 - FABLAB - INFO - NONE - start Fablab
+2022-05-18 07:51:21,694 - FABLAB - INFO - admin - B31F65E5: registration IN
+2022-05-18 07:51:21,715 - FABLAB - INFO - admin - visit: Hallo v4, u hebt juist IN gebadged om 07:51.<br><br>v4, u heeft nog 3 beurten
+2022-05-18 07:53:25,560 - FABLAB - ERROR - admin - Could not edit guest badge/visitor-badge-formio.html
+2022-05-18 07:54:50,853 - FABLAB - INFO - NONE - start Fablab
+2022-05-18 07:56:06,714 - FABLAB - INFO - NONE - start Fablab
+2022-05-18 07:56:41,149 - FABLAB - INFO - admin - Update visitor: borowski manuel, {'last_name': 'borowski', 'first_name': 'manuel', 'subscription_type': 'jaarabonnement', 'subscription_from': datetime.date(2022, 5, 12), 'email': 'emmanuel.borowski@gmail.com', 'phone': '+32496065435', 'badge_input': '', 'badge_code': 'B31F65E5', 'wisBadge': False, 'badge_number': '100', 'visits': []}
+2022-05-18 07:57:02,297 - FABLAB - INFO - admin - B31F65E5: registration IN
+2022-05-18 07:57:02,314 - FABLAB - INFO - admin - visit: Hallo manuel, u hebt juist IN gebadged om 07:57.<br><br>manuel uw abonnement is nog 359 dagen geldig.
+2022-05-18 07:57:13,461 - FABLAB - INFO - admin - visit: Opgelet qsdfqsdf, uw abonnement is verlopen.<br>Vraag info aan een medewerker.
+2022-05-18 07:57:18,449 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-18 07:57:18,469 - FABLAB - INFO - admin - visit: Hallo manuel, u hebt juist UIT gebadged om 07:57.<br><br>manuel uw abonnement is nog 359 dagen geldig.
+2022-05-18 08:01:49,587 - FABLAB - INFO - admin - visit: Opgelet qsdfqsdf, uw abonnement is verlopen.<br>Vraag info aan een medewerker.
+2022-05-18 08:01:56,705 - FABLAB - INFO - NONE - start Fablab
+2022-05-18 08:02:03,738 - FABLAB - INFO - admin - visit: Opgelet qsdfqsdf, uw abonnement is verlopen.<br>Vraag info aan een medewerker.
+2022-05-18 08:04:14,106 - FABLAB - INFO - NONE - start Fablab
+2022-05-18 08:04:58,843 - FABLAB - INFO - NONE - start Fablab
+2022-05-18 08:05:03,128 - FABLAB - INFO - admin - visit: Opgelet qsdfqsdf, uw abonnement is verlopen.<br>Vraag info aan een medewerker.
+2022-05-18 08:05:30,105 - FABLAB - INFO - admin - Update visitor: testa testb, {'last_name': 'testa', 'first_name': 'testb', 'subscription_type': 'jaarabonnement', 'subscription_from': datetime.date(2022, 12, 10), 'email': '', 'phone': '', 'badge_input': '', 'badge_code': '4579B61A', 'wisBadge': False, 'badge_number': '101', 'visits': [], 'paygo_left': '', 'paygo_max': ''}
+2022-05-18 08:05:36,958 - FABLAB - INFO - admin - 4579B61A: registration IN
+2022-05-18 08:05:36,975 - FABLAB - INFO - admin - visit: Hallo testb, u hebt juist IN gebadged om 08:05.<br><br>testb uw abonnement is nog 571 dagen geldig.
+2022-05-18 08:05:40,811 - FABLAB - INFO - admin - 4579B61A: registration OUT
+2022-05-18 08:05:40,836 - FABLAB - INFO - admin - visit: Hallo testb, u hebt juist UIT gebadged om 08:05.<br><br>testb uw abonnement is nog 571 dagen geldig.
+2022-05-18 08:06:25,795 - FABLAB - INFO - admin - 4579B61A: registration OUT
+2022-05-18 08:06:25,810 - FABLAB - INFO - admin - visit: Hallo testb, u hebt juist UIT gebadged om 08:06.<br><br>testb uw abonnement is nog 571 dagen geldig.
+2022-05-18 08:06:28,950 - FABLAB - INFO - admin - 4579B61A: registration OUT
+2022-05-18 08:06:28,971 - FABLAB - INFO - admin - visit: Hallo testb, u hebt juist UIT gebadged om 08:06.<br><br>testb uw abonnement is nog 571 dagen geldig.
+2022-05-18 08:06:34,396 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-18 08:06:34,410 - FABLAB - INFO - admin - visit: Hallo manuel, u hebt juist UIT gebadged om 08:06.<br><br>manuel uw abonnement is nog 359 dagen geldig.
+2022-05-18 08:06:37,716 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-18 08:06:37,729 - FABLAB - INFO - admin - visit: Hallo manuel, u hebt juist UIT gebadged om 08:06.<br><br>manuel uw abonnement is nog 359 dagen geldig.
+2022-05-18 08:07:01,973 - FABLAB - INFO - admin - Update visitor: a4 v4, {'last_name': 'a4', 'first_name': 'v4', 'subscription_type': 'beurtenkaart', 'subscription_from': datetime.date(2022, 5, 16), 'email': '', 'phone': '', 'badge_input': '', 'badge_code': 'B31F65E5', 'wisBadge': False, 'badge_number': '100', 'visits': [{'id': 13, 'time_in': '18/05/2022 07:51', 'time_out': '', 'visitor_id': 8}, {'id': 12, 'time_in': '17/05/2022 15:43', 'time_out': '17/05/2022 20:08', 'visitor_id': 8}], 'paygo_left': 0, 'paygo_max': 5}
+2022-05-18 08:07:04,228 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-18 08:07:04,247 - FABLAB - INFO - admin - visit: Hallo v4, u hebt juist UIT gebadged om 08:07.<br><br>v4, u heeft nog 0 beurten
+2022-05-18 08:07:08,287 - FABLAB - INFO - admin - B31F65E5: registration OUT
+2022-05-18 08:07:08,304 - FABLAB - INFO - admin - visit: Hallo v4, u hebt juist UIT gebadged om 08:07.<br><br>v4, u heeft nog 0 beurten
+2022-05-18 08:08:06,288 - FABLAB - INFO - admin - Update visitor: a4 v4, {'last_name': 'a4', 'first_name': 'v4', 'subscription_type': 'beurtenkaart', 'subscription_from': datetime.date(2022, 5, 16), 'email': '', 'phone': '', 'badge_input': '', 'badge_code': 'B31F65E5', 'wisBadge': False, 'badge_number': '100', 'visits': [], 'paygo_left': 0, 'paygo_max': 5}
+2022-05-18 08:08:11,993 - FABLAB - INFO - admin - visit: Opgelet v4 , uw beurtenkaart is verlopen.<br>Vraag info aan een medewerker.
+2022-05-18 08:08:16,838 - FABLAB - INFO - admin - visit: Opgelet v4 , uw beurtenkaart is verlopen.<br>Vraag info aan een medewerker.
+2022-05-18 08:08:20,901 - FABLAB - INFO - admin - visit: Opgelet v4 , uw beurtenkaart is verlopen.<br>Vraag info aan een medewerker.

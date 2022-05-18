@@ -106,7 +106,7 @@ def item_edit(ids=None):
                 "buttons": ["save", "cancel"],
                 'css': {'width': '50%', 'margin-left': 'auto', 'margin-right': 'auto'},
             }
-        return render_template('badge/visitor-badge-formio.html', data=data, visitors=app.application.visitor.get_visitors())
+        return render_template('visit/visitor-badge-formio.html', data=data, visitors=app.application.visitor.get_visitors())
     except Exception as e:
         log.error(f'Could not edit guest {e}')
         flash_plus('Kan gebruiker niet aanpassen', e)
@@ -122,7 +122,7 @@ def item_add():
                 'css': {'width': '50%', 'margin-left': 'auto', 'margin-right': 'auto'},
                 'visitors': app.application.visitor.get_visitors()
                 }
-        return render_template('badge/visitor-badge-formio.html', data=data, visitors=app.application.visitor.get_visitors())
+        return render_template('visit/visitor-badge-formio.html', data=data, visitors=app.application.visitor.get_visitors())
     except Exception as e:
         log.error(f'Could not add visitor {e}')
         flash_plus(f'Kan visitor niet toevoegen: {e}')

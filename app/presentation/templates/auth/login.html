@@ -11,9 +11,8 @@
     <div class="center">
         <div class="container">
             <div class="thick-green-border" style="width: 450px;margin-left: 60%;">
-                <div class="row">
-                    <h1>Inloggen aub </h1>
-                </div>
+                <div class="row"><a href="{{ url_for('visit.start_fablab') }}">Klik hier om aan te melden in het Fablab</a></div>
+                <div class="row"><h1>Inloggen aub </h1></div>
                 <div class="row thick-green-border" >
                     <form style="width: 100%" method="post" action="{{url_for('auth.login')}}">
                         {{ form.csrf_token }}
