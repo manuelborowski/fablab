@@ -2,10 +2,6 @@ from app import flask_app, login_manager
 from app.data.user import load_user as user_load_user
 
 
-@flask_app.before_first_request
-def at_start():
-    pass
-
 # Set up user_loader
 @login_manager.user_loader
 def load_user(user_id):

@@ -33,11 +33,11 @@ flask_app.config.from_pyfile('config.py')
 # V0.9: git bugfix: removed files from git
 # V0.10: git bugfix: removed files from git
 # V0.11: added pip gevent-websocket
-
+# 0.12: update to python 3.13
 
 @flask_app.context_processor
 def inject_defaults():
-    return dict(version='@ 2022 MB. V0.11', title=flask_app.config['HTML_TITLE'], site_name=flask_app.config['SITE_NAME'])
+    return dict(version='@ 2022 MB. V0.12', title=flask_app.config['HTML_TITLE'], site_name=flask_app.config['SITE_NAME'])
 
 
 #  enable logging
@@ -101,12 +101,13 @@ def add_header(r):
     return r
 
 def create_admin():
-    from app.data.user import User
-    find_admin = User.query.filter(User.username == 'admin').first()
-    if not find_admin:
-        admin = User(username='admin', password='admin', level=User.LEVEL.ADMIN, user_type=User.USER_TYPE.LOCAL)
-        db.session.add(admin)
-        db.session.commit()
+    with flask_app.app_context():
+        from app.data.user import User
+        find_admin = User.query.filter(User.username == 'admin').first()
+        if not find_admin:
+            admin = User(username='admin', password='admin', level=User.LEVEL.ADMIN, user_type=User.USER_TYPE.LOCAL)
+            db.session.add(admin)
+            db.session.commit()
 
 
 flask_app.url_map.converters['int'] = IntegerConverter
